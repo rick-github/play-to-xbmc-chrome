@@ -836,7 +836,7 @@ var YoutubeModule = {
     },
     createCustomContextMenus: function() {
         //Create context menus for embedded youtube videos
-        var url = $('a.thumbnail').attr('href');
+        var url = $('a.video-title-link').attr('href');
         var player = $('video')[0];
         if (url && url.match('v=([^&]+)')) {
             var videoId = url.match('v=([^&]+)')[1];
